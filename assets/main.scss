@@ -1,0 +1,110 @@
+$black: #35393c;
+$white: #fafafa;
+$teal: #5da399;
+
+html,
+body {
+	height: 100%;
+}
+
+header {
+	background-color: $black;
+	padding: 10px;
+	nav {
+		display: flex;
+		justify-content: space-between;
+	}
+	.nav-logo {
+		width: 50px;
+	}
+
+	.nav-links {
+		display: flex;
+		align-items: center;
+		a {
+			padding: 10px 20px;
+			margin: 0 5px;
+			color: $white;
+			text-decoration: none;
+			font-family: "Quicksand", sans-serif;
+		}
+	}
+}
+
+.hero {
+	min-height: 75%;
+	background-image: url(/assets/images/ZenBG.png);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 10px;
+	font-family: "Fondamento", cursive;
+	h1 {
+		font-size: 48px;
+		color: $black;
+	}
+
+	h2 {
+		font-size: 36px;
+		color: $black;
+		font-style: italic;
+	}
+
+	@media (min-width: 768px) {
+		padding: 0 50px;
+	}
+}
+
+.about {
+	max-width: 1100px;
+	margin: 0 auto;
+	font-family: "Quicksand", sans-serif;
+	&-left,
+	&-right {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&-right {
+		padding: 10px;
+	}
+	h2 {
+		font-size: 24px;
+	}
+	p {
+		font-size: 18px;
+	}
+}
+
+.example {
+	max-width: 1100px;
+	margin: 0 auto;
+	font-family: "Quicksand", sans-serif;
+	.title {
+		background-color: $teal;
+		height: 20px;
+		color: $white;
+		padding: 10px 0;
+		text-align: center;
+	}
+	.item {
+		background-color: $black;
+		height: 20px;
+		color: $white;
+		padding: 10px 0;
+		text-align: center;
+	}
+}
+
+footer {
+	min-height: 10%;
+	background-color: $teal;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Fondamento", cursive;
+	a {
+		color: $white;
+	}
+}

@@ -1,0 +1,149 @@
+html,
+body {
+  height: 100%;
+}
+
+header {
+  background-color: #35393c;
+  padding: 10px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .nav-logo {
+  width: 50px;
+}
+
+header .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-links a {
+  padding: 10px 20px;
+  margin: 0 5px;
+  color: #fafafa;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+.hero {
+  min-height: 75%;
+  background-image: url(/assets/images/ZenBG.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 10px;
+  font-family: "Fondamento", cursive;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #35393c;
+}
+
+.hero h2 {
+  font-size: 36px;
+  color: #35393c;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 0 50px;
+  }
+}
+
+.about {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: "Quicksand", sans-serif;
+}
+
+.about-left, .about-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-right {
+  padding: 10px;
+}
+
+.about h2 {
+  font-size: 24px;
+}
+
+.about p {
+  font-size: 18px;
+}
+
+.example {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: "Quicksand", sans-serif;
+}
+
+.example .title {
+  background-color: #5da399;
+  height: 20px;
+  color: #fafafa;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.example .item {
+  background-color: #35393c;
+  height: 20px;
+  color: #fafafa;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer {
+  min-height: 10%;
+  background-color: #5da399;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Fondamento", cursive;
+}
+
+footer a {
+  color: #fafafa;
+}
+/*# sourceMappingURL=main.css.map */

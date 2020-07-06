@@ -1,0 +1,130 @@
+div[class^="sm-"],
+div[class^="md-"],
+div[class^="lg-"],
+.all-12 {
+	display: grid;
+	grid-gap: 15px;
+	margin: 15px 0;
+}
+// --------------------------------- 3-9
+.sm-3-9 {
+	grid-template-columns: 1fr;
+	@media (min-width: 600px) {
+		grid-template-columns: 1fr 3fr;
+	}
+}
+.md-3-9 {
+	grid-template-columns: 1fr;
+	@media (min-width: 900px) {
+		grid-template-columns: 1fr 3fr;
+	}
+}
+.lg-3-9 {
+	grid-template-columns: 1fr;
+	@media (min-width: 1200px) {
+		grid-template-columns: 1fr 3fr;
+	}
+}
+// --------------------------------- 3-6-3
+.sm-3-6-3 {
+	grid-template-columns: 1fr;
+	@media (min-width: 600px) {
+		grid-template-columns: 1fr 2fr 1fr;
+	}
+}
+.md-3-6-3 {
+	grid-template-columns: 1fr;
+	@media (min-width: 900px) {
+		grid-template-columns: 1fr 2fr 1fr;
+	}
+}
+.lg-3-6-3 {
+	grid-template-columns: 1fr;
+	@media (min-width: 1200px) {
+		grid-template-columns: 1fr 2fr 1fr;
+	}
+}
+
+// --------------------------------- 9-3
+.sm-9-3 {
+	grid-template-columns: 1fr;
+	@media (min-width: 600px) {
+		grid-template-columns: 3fr 1fr;
+	}
+}
+.md-9-3 {
+	grid-template-columns: 1fr;
+	@media (min-width: 900px) {
+		grid-template-columns: 3fr 1fr;
+	}
+}
+.lg-9-3 {
+	grid-template-columns: 1fr;
+	@media (min-width: 1200px) {
+		grid-template-columns: 3fr 1fr;
+	}
+}
+
+// --------------------------------- 4-8
+.sm-4-8 {
+	grid-template-columns: 1fr;
+	@media (min-width: 600px) {
+		grid-template-columns: 1fr 2fr;
+	}
+}
+.md-4-8 {
+	grid-template-columns: 1fr;
+	@media (min-width: 900px) {
+		grid-template-columns: 1fr 2fr;
+	}
+}
+.lg-4-8 {
+	grid-template-columns: 1fr;
+	@media (min-width: 1200px) {
+		grid-template-columns: 1fr 2fr;
+	}
+}
+
+// --------------------------------- 8-4
+.sm-8-4 {
+	grid-template-columns: 1fr;
+	@media (min-width: 600px) {
+		grid-template-columns: 2fr 1fr;
+	}
+}
+.md-8-4 {
+	grid-template-columns: 1fr;
+	@media (min-width: 900px) {
+		grid-template-columns: 2fr 1fr;
+	}
+}
+.lg-8-4 {
+	grid-template-columns: 1fr;
+	@media (min-width: 1200px) {
+		grid-template-columns: 2fr 1fr;
+	}
+}
+
+.sm-eq {
+	grid-template-columns: 1fr;
+	@media (min-width: 600px) {
+		grid-auto-columns: 1fr;
+		grid-auto-flow: column;
+	}
+}
+
+.md-eq {
+	grid-template-columns: 1fr;
+	@media (min-width: 900px) {
+		grid-auto-columns: 1fr;
+		grid-auto-flow: column;
+	}
+}
+
+.lg-eq {
+	grid-template-columns: 1fr;
+	@media (min-width: 1200px) {
+		grid-auto-columns: 1fr;
+		grid-auto-flow: column;
+	}
+}
