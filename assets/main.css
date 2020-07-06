@@ -40,7 +40,7 @@ header .nav-links a {
 
 .hero {
   min-height: 75%;
-  background-image: url(/assets/images/ZenBG.png);
+  background-image: url(./images/ZenBG.png);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
