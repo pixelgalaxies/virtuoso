@@ -35,7 +35,7 @@
 ### Looking at sm-3-9
 #### the *sm* represents "small". This is the break point specification. An element prefixed with *sm* will make its children columns expand starting at 600px 
 
-### Screen sizes:
+#### Screen sizes:
 ```
 sm: expand at 600px 
 md: expand at 900px 
@@ -44,7 +44,7 @@ lg: expand at 1200px
 *note: elements viewed on a screen below 600px will be full width elements
 ```
 
-#### Now lets look at the 3-9 
+### Now lets look at the 3-9 
 #### Seeing two numbers tells us this element should expect two children elements. The first will be 1 fractional unit wide (1/4 of the available width), the second will be 3 fractional units wide (3/4 of the available width). The numbers used in Virtuoso are based off the 12 point grid system Bootstrap was built on. 
 
 ### .all-12, .sm-eq, md-eq, and .lg-eq
