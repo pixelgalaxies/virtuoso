@@ -2,7 +2,7 @@
 
 ## Virtuoso is *another* Grid Library, but this one is built with the CSS Grid Module.
 
-###Let's break it down. Here is a list of all the classes involved:
+### Let's break it down. Here is a list of all the classes involved:
 ```
 .all-12 
 
