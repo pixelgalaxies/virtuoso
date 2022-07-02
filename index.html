@@ -1,210 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Virtuoso</title>
 
-		<link rel="stylesheet" href="assets/normalize.css" />
-		<link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Quicksand:wght@500" rel="stylesheet" />
-		<link rel="stylesheet" href="assets/virtuoso.css" />
-		<link rel="stylesheet" href="assets/main.css" />
-	</head>
-	<body>
-		<header>
-			<nav>
-				<img class="nav-logo" src="assets/images/logo.png" alt="" />
-				<div class="nav-links">
-					<a href="#about">About</a>
-					<a href="#example">Grid</a>
-					<a href="https://github.com/pixelgalaxies/virtuoso/tree/gh-pages">Documentation</a>
-				</div>
-			</nav>
-		</header>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Virtuoso</title>
+
+	<link rel="stylesheet" href="assets/normalize.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Quicksand:wght@500" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/virtuoso.css" />
+	<link rel="stylesheet" href="assets/main.css" />
+</head>
+
+<body>
+	<header>
+		<nav>
+			<span class="nav-logo">V</span>
+			<div class="nav-links">
+				<a href="#about">About</a>
+				<a href="#grids">Grids</a>
+				<a href="#notes">Notes</a>
+				<a href="https://github.com/pixelgalaxies/virtuoso/tree/gh-pages">Documentation</a>
+			</div>
+		</nav>
+	</header>
+
+	<main>
 		<section class="hero">
-			<h1>Virtuoso</h1>
-			<h2>A grid library built with the CSS grid module.</h2>
+			<div class="hero__inner v-grid-12 v-contained">
+				<div class="col-md-6 hero__details">
+					<h1 class="hero__heading heading">Virtuoso</h1>
+					<h2 class="hero__subheading">Marvelously composed grids.</h2>
+					<a href="#about" class="hero__link btn">Learn More</a>
+				</div>
+				<div class="col-md-6 hero__image">
+					<img src="/assets/images/responsive.png" alt="Responsive Image Art">
+				</div>
+			</div>
 		</section>
 
-		<section class="about" id="about">
-			<div class="md-eq">
-				<div class="about-left">
-					<img src="assets/images/responsive.gif" alt="" />
+
+
+		<section id="about" class="about">
+			<div class="v-grid-12 v-contained">
+				<div class="col">
+					<h2 class="heading">Orchestrate Perfection</h2>
 				</div>
-				<div class="about-right">
-					<h2>Another Grid Library?</h2>
+				<div class="col-sm-6">
 					<p>
-						Yes! This one is built
-						<em>with</em>
-						the CSS grid module though. It's small, fast, and easy to use. There are no bloat classes and no fighting with the library. It is
-						<strong>JUST</strong>
-						a grid system.
-						<br />
-						<br />
-						Every row has a preset number of fractional units that its children elements will use to set their widths. For example, the element with the class name "md-4-8" will should expect two
-						children. The first will be one fractional unit (1/3 of the page) and the second element will be 2 fractional units (2/3 of the page).
-						<br />
-						<br />
-						The letters at the beginning of the classname indicate at what point should the elements break into full width columns.
+						Another Grid Library? Yes! This one is built with the CSS grid module though, meaning it's small, fast, and
+						easy to use. There are no bloat classes and no fighting with the library. It is JUST a grid system.
+					</p>
+				</div>
+				<div class="col-sm-6">
+					<p>
+						Choose between 10 space or 12 space grids. Each grid item will span a certain number of these spaces based
+						on the class you give it. And voila, your layout for that section is done.
 					</p>
 				</div>
 			</div>
 		</section>
 
-		<section class="example" id="example">
-			<div class="all-12">
-				<div class="title">.all-12</div>
-			</div>
 
-			<div class="all-12">
-				<div class="item">12</div>
-			</div>
 
-			<div class="all-12">
-				<div class="title">
-					<em>.size</em>
-					-3-9
+		<section id="grids" class="grids">
+			<div class="v-grid-12 v-contained grids__twelve">
+				<div class="col">
+					<h2 class="heading">The Grids</h2>
+				</div>
+
+				<div class="col">
+					<h3 class="subheading">Arrangement 12</h3>
+					<p>
+						This grid has 12 spaces to fill. Example: for a three column layout, you would use the class col-x-4 on your
+						three
+						grid items. Just make sure your numbers add up to 12! Any higher and you'll overflow onto a new line.
+					</p>
 				</div>
 			</div>
 
-			<div class="sm-3-9">
-				<div class="item">sm 3</div>
-				<div class="item">sm 9</div>
+			<div class="v-grid-12">
+				<div class="col-lg-1 col-md-3 demo-item">1</div>
+				<div class="col-lg-1 col-md-3 demo-item">1</div>
+				<div class="col-lg-1 col-md-3 demo-item">1</div>
+				<div class="col-lg-1 col-md-3 demo-item">1</div>
+				<div class="col-lg-1 col-md-3 demo-item">1</div>
+				<div class="col-lg-1 col-md-3 demo-item">1</div>
+				<div class="col-lg-1 col-md-3 demo-item">1</div>
+				<div class="col-lg-1 col-md-3 demo-item">1</div>
+				<div class="col-lg-1 col-md-3 demo-item">1</div>
+				<div class="col-lg-1 col-md-3 demo-item">1</div>
+				<div class="col-lg-1 col-md-3 demo-item">1</div>
+				<div class="col-lg-1 col-md-3 demo-item">1</div>
+				<div class="demo-item col">12</div>
+				<div class="col-sm-11 demo-item">11</div>
+				<div class="col-sm-1 demo-item">1</div>
+				<div class="col-sm-10 demo-item">10</div>
+				<div class="col-sm-2 demo-item">2</div>
+				<div class="col-sm-9 demo-item">9</div>
+				<div class="col-sm-3 demo-item">3</div>
+				<div class="col-sm-8 demo-item">8</div>
+				<div class="col-sm-4 demo-item">4</div>
+				<div class="col-sm-7 demo-item">7</div>
+				<div class="col-sm-5 demo-item">5</div>
+				<div class="col-sm-6 demo-item">6</div>
+				<div class="col-sm-6 demo-item">6</div>
+				<div class="col-sm-3 demo-item">3</div>
+				<div class="col-sm-3 demo-item">3</div>
+				<div class="col-sm-3 demo-item">3</div>
+				<div class="col-sm-3 demo-item">3</div>
+				<div class="col-sm-4 demo-item">4</div>
+				<div class="col-sm-4 demo-item">4</div>
+				<div class="col-sm-4 demo-item">4</div>
 			</div>
 
-			<div class="md-3-9">
-				<div class="item">md 3</div>
-				<div class="item">md 9</div>
-			</div>
-
-			<div class="lg-3-9">
-				<div class="item">lg 3</div>
-				<div class="item">lg 9</div>
-			</div>
-
-			<div class="all-12">
-				<div class="title">
-					<em>.size</em>
-					-3-6-3
+			<div class="v-grid-12 v-contained grids__ten">
+				<div class="col">
+					<h3 class="subheading">Arrangement 10</h3>
+					<p>
+						This grid has 10 spaces to fill. Example: for a five column layout, you would use the class col-x-2 on your
+						five
+						grid items. Just make sure your numbers add up to 10! Any higher and you'll overflow onto a new line.
+					</p>
 				</div>
 			</div>
 
-			<div class="sm-3-6-3">
-				<div class="item">sm 3</div>
-				<div class="item">sm 6</div>
-				<div class="item">sm 3</div>
-			</div>
-
-			<div class="md-3-6-3">
-				<div class="item">md 3</div>
-				<div class="item">md 6</div>
-				<div class="item">sm 3</div>
-			</div>
-
-			<div class="lg-3-6-3">
-				<div class="item">lg 3</div>
-				<div class="item">lg 6</div>
-				<div class="item">sm 3</div>
-			</div>
-
-			<div class="all-12">
-				<div class="title">
-					<em>.size</em>
-					-9-3
-				</div>
-			</div>
-
-			<div class="sm-9-3">
-				<div class="item">sm 9</div>
-				<div class="item">sm 3</div>
-			</div>
-
-			<div class="md-9-3">
-				<div class="item">md 9</div>
-				<div class="item">md 3</div>
-			</div>
-
-			<div class="lg-9-3">
-				<div class="item">lg 9</div>
-				<div class="item">lg 3</div>
-			</div>
-
-			<div class="all-12">
-				<div class="title">
-					<em>.size</em>
-					-4-8
-				</div>
-			</div>
-
-			<div class="sm-4-8">
-				<div class="item">sm 4</div>
-				<div class="item">sm 8</div>
-			</div>
-
-			<div class="md-4-8">
-				<div class="item">md 4</div>
-				<div class="item">md 8</div>
-			</div>
-
-			<div class="lg-4-8">
-				<div class="item">lg 4</div>
-				<div class="item">lg 8</div>
-			</div>
-
-			<div class="all-12">
-				<div class="title">
-					<em>.size</em>
-					-8-4
-				</div>
-			</div>
-
-			<div class="sm-8-4">
-				<div class="item">sm 8</div>
-				<div class="item">sm 4</div>
-			</div>
-
-			<div class="md-8-4">
-				<div class="item">md 8</div>
-				<div class="item">md 4</div>
-			</div>
-
-			<div class="lg-8-4">
-				<div class="item">lg 8</div>
-				<div class="item">lg 4</div>
-			</div>
-
-			<div class="all-12">
-				<div class="title">
-					<em>.size</em>
-					-eq
-				</div>
-			</div>
-
-			<div class="sm-eq">
-				<div class="item">sm EQ</div>
-				<div class="item">sm EQ</div>
-			</div>
-
-			<div class="md-eq">
-				<div class="item">md EQ</div>
-				<div class="item">md EQ</div>
-				<div class="item">md EQ</div>
-			</div>
-
-			<div class="lg-eq">
-				<div class="item">lg EQ</div>
-				<div class="item">lg EQ</div>
-				<div class="item">lg EQ</div>
-				<div class="item">lg EQ</div>
+			<div class="v-grid-10">
+				<div class="col-lg-1 col-md-2 demo-item">1</div>
+				<div class="col-lg-1 col-md-2 demo-item">1</div>
+				<div class="col-lg-1 col-md-2 demo-item">1</div>
+				<div class="col-lg-1 col-md-2 demo-item">1</div>
+				<div class="col-lg-1 col-md-2 demo-item">1</div>
+				<div class="col-lg-1 col-md-2 demo-item">1</div>
+				<div class="col-lg-1 col-md-2 demo-item">1</div>
+				<div class="col-lg-1 col-md-2 demo-item">1</div>
+				<div class="col-lg-1 col-md-2 demo-item">1</div>
+				<div class="col-lg-1 col-md-2 demo-item">1</div>
+				<div class="demo-item col">10</div>
+				<div class="col-sm-9 demo-item">9</div>
+				<div class="col-sm-1 demo-item">1</div>
+				<div class="col-sm-8 demo-item">8</div>
+				<div class="col-sm-2 demo-item">2</div>
+				<div class="col-sm-7 demo-item">7</div>
+				<div class="col-sm-3 demo-item">3</div>
+				<div class="col-sm-6 demo-item">6</div>
+				<div class="col-sm-4 demo-item">4</div>
+				<div class="col-sm-5 demo-item">5</div>
+				<div class="col-sm-5 demo-item">5</div>
 			</div>
 		</section>
 
-		<footer>
-			<span class="footer-text">
-				Virtuoso was built by
-				<a href="http://www.dustinclark.ninja">Dustin Clark</a>
-				&copy;2020
-			</span>
-		</footer>
-	</body>
+
+		<section id="notes" class="notes">
+			<div class="v-grid-12 v-contained">
+				<div class="col">
+					<h2 class="heading">Final Notes</h2>
+				</div>
+				<div class="col-md-4">
+					<h3 class="subheading">Fixed-Width</h3>
+					<p>
+						Looking to set a max-width on your grids? Use the .v-contained class for your convenience. It will set a
+						max-width of 1024px at large screen sizes, and 1280px once it gets to extra-large screens.
+					</p>
+				</div>
+
+				<div class="col-md-4">
+					<h3 class="subheading">Gap</h3>
+					<p>
+						If you don't like the default gap or you want to change it at different screen sizes, overriding it is easy.
+						Just target .v-grid-12 or .v-grid-10 like you normally would and reset the gap to whatever works with your
+						ensemble.
+					</p>
+				</div>
+
+				<div class="col-md-4">
+					<h3 class="subheading">Breakpoints</h3>
+					<span>The breakpoints are as follows:</span>
+					<ul class="notes__bp-list">
+						<li>xs: 0</li>
+						<li>sm: 500px</li>
+						<li>md: 768px</li>
+						<li>lg: 1024px</li>
+						<li>xl: 1280px</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<span class="footer-text">
+			Virtuoso was built by
+			<a href="http://www.dustinclark.ninja">Dustin Clark</a>
+			&copy;2020 -
+			<script>
+				let d = new Date();
+				document.write(d.getFullYear());
+			</script>
+		</span>
+	</footer>
+</body>
+
 </html>

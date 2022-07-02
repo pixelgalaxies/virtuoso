@@ -1,105 +1,188 @@
-$black: #35393c;
-$white: #fafafa;
-$teal: #5da399;
+$primary: #b8b8ff;
+$primary-variant: #8777de;
+$accent: #fff08f;
+$white: #f1f1f1;
+$black: #242424;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 html,
 body {
 	height: 100%;
+	font-family: "Quicksand", sans-serif;
+	color: $black;
+}
+
+section {
+	padding-block: 50px;
+}
+
+.heading {
+	font-family: "Fondamento", cursive;
+	font-size: 36px;
+	position: relative;
+	margin-bottom: 35px;
+
+	&:after {
+		content: '';
+		position: absolute;
+		height: 15px;
+		width: 125px;
+		bottom: -20px;
+		left: 0;
+		background-color: $primary-variant;
+	}
+}
+
+.subheading {
+	font-size: 24px;
+}
+
+.btn {
+	transition: all .25s ease-in-out;
+	height: 50px;
+	width: 200px;
+	margin-block: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba($white, 0.5);
+	border: 2px solid $primary-variant;
+	color: $primary-variant;
+	font-size: 18px;
+	text-decoration: none;
+	
+	&:hover, &:active, &:focus {
+		background-color: $accent;
+		border-color: $accent;
+		color: $black;
+	}
 }
 
 header {
-	background-color: $black;
-	padding: 10px;
+	background-color: $primary;
+	padding: 15px;
 	nav {
 		display: flex;
 		justify-content: space-between;
 	}
 	.nav-logo {
-		width: 50px;
+		font-family: "Fondamento", cursive;
+		font-size: 90px;
+		color: $white;
 	}
 
 	.nav-links {
 		display: flex;
 		align-items: center;
 		a {
-			padding: 10px 20px;
+			padding-block: 10px;
 			margin: 0 5px;
-			color: $white;
+			color: $black;
 			text-decoration: none;
 			font-family: "Quicksand", sans-serif;
+
+			&:not(:last-child) {
+				padding-right: 20px;
+			}
+
+			&:hover, &:active, &:focus {
+				color: $accent;
+				text-shadow: 0px 0px 4px $black;
+			}
 		}
 	}
 }
 
 .hero {
-	min-height: 75%;
-	background-image: url(./images/ZenBG.png);
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	padding: 0 10px;
-	font-family: "Fondamento", cursive;
-	h1 {
-		font-size: 48px;
-		color: $black;
+  background-color: $white;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='46' viewBox='0 0 70 46'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%238777de' fill-opacity='0.1'%3E%3Cpolygon points='68 44 62 44 62 46 56 46 56 44 52 44 52 46 46 46 46 44 40 44 40 46 38 46 38 44 32 44 32 46 26 46 26 44 22 44 22 46 16 46 16 44 12 44 12 46 6 46 6 44 0 44 0 42 8 42 8 28 6 28 6 0 12 0 12 28 10 28 10 42 18 42 18 28 16 28 16 0 22 0 22 28 20 28 20 42 28 42 28 28 26 28 26 0 32 0 32 28 30 28 30 42 38 42 38 0 40 0 40 42 48 42 48 28 46 28 46 0 52 0 52 28 50 28 50 42 58 42 58 28 56 28 56 0 62 0 62 28 60 28 60 42 68 42 68 0 70 0 70 46 68 46'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  padding: 0 15px;
+	
+
+  &__inner {
+    min-height: 80vh;
+		align-items: center;
+  }
+
+	&__details {
+		text-align: center;
+
+		@media(min-width: 768px) {
+			text-align: left;
+		}
 	}
 
-	h2 {
-		font-size: 36px;
-		color: $black;
-		font-style: italic;
+	&__link {
+		@media(max-width: 767px) {
+			margin-inline: auto;
+		}
 	}
 
-	@media (min-width: 768px) {
-		padding: 0 50px;
+	&__image {
+		img {
+			max-width: 100%;
+		}
 	}
+  
+  &__heading {
+    font-size: 72px;
+  }
+  
+  &__subheading {
+    font-size: 24px;
+		font-family: "Quicksand", sans-serif;
+    
+    @media (min-width: 768px) {
+      font-size: 36px;
+    }
+  }
 }
 
 .about {
-	max-width: 1100px;
-	margin: 0 auto;
-	font-family: "Quicksand", sans-serif;
-	&-left,
-	&-right {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	&-right {
-		padding: 10px;
-	}
-	h2 {
-		font-size: 24px;
-	}
-	p {
-		font-size: 18px;
-	}
+  padding-inline: 15px;
 }
 
-.example {
-	max-width: 1100px;
-	margin: 0 auto;
-	font-family: "Quicksand", sans-serif;
-	.title {
-		background-color: $teal;
-		height: 20px;
-		color: $white;
-		padding: 10px 0;
-		text-align: center;
+.grids {
+	background-color: $primary;
+	padding-inline: 15px;
+	
+	&__ten, &__twelve {
+		margin-bottom: 15px;
 	}
-	.item {
-		background-color: $black;
-		height: 20px;
-		color: $white;
-		padding: 10px 0;
-		text-align: center;
+	
+	&__ten {
+		margin-top: 50px;
+	}
+
+}
+
+
+.demo-item {
+  background-color: $white;
+  min-height: 20px;
+  color: $black;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+
+.notes {
+  padding-inline: 15px;
+
+	&__bp-list {
+		list-style-type: square;
+		padding-left: 35px;
 	}
 }
 
 footer {
 	min-height: 10%;
-	background-color: $teal;
+	background-color: $primary;
 	display: flex;
 	justify-content: center;
 	align-items: center;
